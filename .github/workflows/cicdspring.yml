@@ -21,7 +21,7 @@ jobs:
         run: mvn install
 
       - name: Run test & Generte Jar Package
-        run: mvn --batch-mode-verify
+        run: mvn --batch-mode verify
 
       - name: Login to docker hub
         uses: docker/login-action@v3
